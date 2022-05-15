@@ -2,7 +2,7 @@ import { prisma } from "../../prisma";
 import {
   FeedbacksCreateData,
   FeedbacksRepository,
-} from "../feedbacks-repository";
+} from "../feedbacksRepository";
 
 export class PrismaFeedbacksRepository implements FeedbacksRepository {
   async create({ type, comment, screenshot }: FeedbacksCreateData) {
